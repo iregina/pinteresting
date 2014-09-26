@@ -9,7 +9,7 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
-gem 'sdoc', '~> 0.4.0',          
+gem 'bootstrap-sass'         
 
 
 
@@ -22,11 +22,9 @@ group :production do
   gem 'rails_12factor'
 end
 
-group: :doc
-gem 'bootstrap-sass'
-
-gem 'spring',        
-group: :development
+group :doc do
+  gem 'sdoc', require: false
+end
 
 
 
